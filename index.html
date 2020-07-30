@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome music player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="background" src="./assets/cover/121626.jpg" alt="">
+    <audio id="song" src="./assets/music/Mot Cu Lua - Bich Phuong.mp3"></audio>
+
+    <div class="container">
+        <div class="box"></div>
+
+        <img id="thumbnail" src="./assets/cover/121626.jpg" alt="">
+        <img id="play-pause" onclick="playPause()" src="./assets/icon/icons8-play-64.png" alt="">
+        <img id="next-song" onclick="nextSong()" src="./assets/icon/icons8-forward-64.png" alt="">
+        <img id="previous-song" onclick="previousSong()" src="./assets/icon/icons8-backward-button-64.png" alt="">
+
+        <div class="song-artist">Bích Phương</div>
+        <div class="song-title">Một cú lừa</div>
+
+        <input type="range" min="0" max="" value="0" id="progress-bar" onchange="changeProgressBar()">
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
